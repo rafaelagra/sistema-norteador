@@ -2,7 +2,7 @@
 
 ## 📜 Sobre o Projeto
 
-O **Sistema Norteador** é um projeto acadêmico desenvolvido durante o curso **Técnico em Informática para Internet** no **Instituto Federal de Santa Catarina (IFSC)**. Ele representa meu primeiro projeto prático de desenvolvimento web, criado para aplicar e solidificar os fundamentos das tecnologias front-end.
+O **Sistema Norteador** é um projeto acadêmico desenvolvido durante o curso **Técnico em Informática para Internet** no **Instituto Federal de Santa Catarina (IFSC)**. Ele representa meu primeiro projeto prático de desenvolvimento web com HTML e CSS, criado para aplicar e solidificar os fundamentos das tecnologias front-end.
 
 Imagine construir uma casa:
 * O **HTML** foi usado para construir a estrutura, o "esqueleto": as paredes, portas e janelas.
