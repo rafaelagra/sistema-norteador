@@ -1,0 +1,40 @@
+<doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-t">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cadastro de veículo - Sistema Norteador</title>
+        <link rel="stylesheet" href="./css/estilos.css">
+    </head>
+    <body>
+
+        <header>
+            <h1>Cadastro de novo veículo</h1>
+        </header>
+
+        <main>
+            <form action="#" method="post">
+                <div>
+                    <label for="marca">Marca:</label>
+                    <input type="text" id="marca" name="marca_veiculo" placeholder="EX: Volkswagen" required maxlength="50">
+                </div>
+                <div>
+                    <label for="modelo">Modelo:</label>
+                    <input type="text" id="modelo" name="modelo_veiculo" placeholder="EX: Gol" required maxlength="50">
+                </div>
+                <div>
+                    <label for="placa">Placa:</label>
+                    <input type="text" id="placa" name="placa_veiculo" placeholder="ABC-1234 ou ABC1D23" required minlength="7" maxlength="8">
+                </div>
+
+                <button type="submit">Cadastrar Veículos</button>
+            </form>
+            <p><a href="./index.html">Voltar para a página inicial</a></p>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Sistema Norteador</p>
+        </footer>
+
+    </body>
+    </html>

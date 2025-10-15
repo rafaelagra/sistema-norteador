@@ -1,0 +1,103 @@
+/* estilos.css */
+
+/* regra para o <body>
+pense no 'body' como a tela inteira do seu site
+vamos definir uma fonte padrão, uma cor de fundo suave e centralizar o conteúdo
+*/
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Symbol"; /* uma lista de fontes modernas e seguras*/
+    background-color: #f0f2f5; /* um cinza muito claro, mais profissional que o branco puro*/
+    margin: 0; /* remove a margem padrão do navegador*/
+    display: flex; /* ativa um modo de layout moderno (Flexbox) */
+    flex-direction: column; /* Organiza os itens em uma coluna (um embaixo do outro) */
+    align-items: center; /* centraliza tudo horizontalmente na página*/
+    min-height: 100vh; /* garante que o corpo ocupe pelo menos 100% da altura da tela*/
+}
+
+/* regra para o <header> e <footer>
+o cabeçalho e o rodapé. vou dar a eles uma cor de fundo escura para se destacarem
+*/
+header, footer {
+    width: 100%; /* faz com que ocupem toda a largura*/
+    background-color: #2c3e50; /* um tom de azul escuro/ cinza*/
+    color: white; /*cor do texto será branca*/
+    text-align: center; /* alinha o texto ao centro*/
+    padding: 20px 0; /* espaçamento interno: 20px em cima/baixo, 0 nos lados*/
+    box-sizing: border-box; /* evita que o padding "estoure a largura"*/
+}
+
+/* regra para o <main>
+essa é a caixa de conteúdo principal.
+*/
+main {
+    background-color: white; /* fundo branco para contrastar com o body*/
+    padding: 30px; /* um bom espaçamento interno*/
+    margin: 30px 0; /* espaçamento externo (em cima/ baixo) para desgrudar do header/footer*/
+    border-radius: 10px; /* deixa as bordas levemente arrredondadas*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /*uma sombra suave para dar profundidade*/
+    width: 90%; /* ocupa 90% da largura disponível*/
+    max-width: 600px; /*mas não passa de 600px, para não ficar esquisito em telas gigantes*/
+}
+
+/* regra para o formulário (<form>)
+*/
+form {
+    display: flex;
+    flex-direction: column; /*itens do formulário um embaixo do outro*/
+    gap: 15px; /*cria um espaço vertical de 15px entre cada item do formulario*/
+}
+
+/* regra para as etiquetas (<label>)
+o texto que descreve cada campo
+*/
+
+label {
+    font-weight: bold; /*deixa o texto em negrito*/
+    margin-bottom: 5px; /*pequeno espaço abaixo do label*/
+}
+
+/* regra para os campos de digitalização (<input>)
+foram selecionados vários tipos de input de uma vez
+*/
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"] {
+    width: 100%; /*faz o campo ocupar toda a largura da caixa 'main'*/
+    padding: 12px; /*espaçamento interno, para o texto não ficar colado na borda*/
+    border: 1px solid #ccc; /*borda cinza clara*/
+    border-radius: 5px; /*bordas levemente arredondadas*/
+    box-sizing: border-box; /*garante que o padding não "estoure" a largura*/
+    font-size: 16px; /*tamanho da fonte do texto que o usuário digita*/
+}
+
+/* regra para o botão (<button>)*/
+button[type="submit"] {
+    background-color: #3498db; /* azul vibrante*/
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 15px;
+    border: none; /*remove a borda padrão feia*/
+    border-radius: 5px;
+    cursor: pointer; /*o cursor do mouse vira uma "mãozinha" ao passar por cima*/
+    transition: background-color 0.2s; /*efeito suave quando a cor mudar*/
+}
+
+/* esta é uma "pseudo-classe". a regra só vale quando o mouse está EM CIMA do botão */
+button[type="submit"]:hover {
+    background-color: #2980b9 /*um tom de azul um pouco mais escuro*/
+}
+
+/* regra para os links (<a>)
+estilizando os links de navegação:
+*/
+a {
+    color:#3498db; /*mesma cor azul do botão*/
+    text-decoration: none; /*remove aquele sublinhado padrão*/
+}
+
+a:hover {
+    text-decoration: underline; /*o sublinhado só aparece quando o mouse estiver em cima*/
+}

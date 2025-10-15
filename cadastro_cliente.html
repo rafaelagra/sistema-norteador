@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Cadastro de cliente - Sistema norteador</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Cadastro de novo cliente</h1>
+    </header>
+
+    <main>
+        <form action="#"  method="post"> <!--action="#":define para onde os dados do formulario serão enviados--> <!--method="post":define o método http usado-->
+            <div> <!--tag de divisão-->
+                <label for="nome">Nome Completo:</label> <!--cria uma etiqueta de texto descritiva para um campo de formulario-->
+                <input type="text" id="nome" name="nome_cliente" placeholder="EX: João Silva" required minlength="3" maxlength="100"> <!--input:cria o campo onde o usuário digita a informação-->
+            </div>
+            <div>
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="endereco" name="endereco_cliente" placeholder="Rua, Número, Bairro" required maxlength="150"> <!--placeholder:mostra um texto de exemplo dentro do campo-->
+            </div>
+            <div>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email_cliente" placeholder="seuemail@dominio.com" required> <!--required: torna o campo obrigatório, não pode ficar vazio-->
+            </div>
+            <div>
+                <label for="usuario">nome do usuário:</label>
+                <input type="text" id="usuario" name="username" required minlength="5" maxlength="20">
+            </div>
+            <div>
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha_usuario" required minlength="8">
+            </div>
+            <div>
+                label for="celular">Celular:</label>
+                <input type="tel" id="celular" name="celular_cliente" placeholder="(99)99999-9999" required pattern="\(\d{2}\)\s\d{5}-\d{4}">
+            </div>
+
+            <button type="submit">Cadastrar Cliente</button> <!--cria um botão, que quando clicado faz o envio do formulário-->
+        </form>
+        <p><a href="./index.html">Voltar para a página inicial</a></p> <!--link de navegação que permite que o usuário volte á página inicial-->
+    </main>
+    <footer>
+        <p>&copy; 2025 sistema norteador.</p>
+    </footer>
+
+</body>
+</html>
